@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import ButtonStack from './components/buttonStack';
+import TypographyStack from './components/typographyStack';
+import CssBaseline from '@mui/material/CssBaseline';
+import BtnToggleGroup from './components/btnToggleGroup';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <div className="App">
+         <CssBaseline />
+         <ButtonStack />
+         <BtnToggleGroup/>
+         <TypographyStack />
+      </div>
+   );
 }
 
 export default App;
